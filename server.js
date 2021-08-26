@@ -9,9 +9,16 @@ app.use(cors())
 app.get("/", (req,res)=>{
     res.sendFile(path.join(__dirname, "./index.html"))
 })
-const URLs = {
-    "The quacken" : "https://i.redd.it/f3x0sem47ib61.jpg"
-}
+app.get('/js', (req,res)=>{
+    res.sendFile(path.join(__dirname,'./client.js'))
+})
+app.get('/css',(req,res)=>{
+    res.sendFile(path.join(__dirname,'style.css'))
+})
+
+
+app.use('/js', express.static(path.join(__dirname, './client.js')))
+app.use('/css', express.static(path.join(__dirname, './stule.css')))
 
 
 
