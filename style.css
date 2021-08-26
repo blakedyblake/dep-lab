@@ -33,7 +33,14 @@ p{
 h2{
 
     position: absolute;
-    left:10%;
-    top: 950px;
+    left:12%;
+    top: 900px;
+    font-size:1.3em;
 
+}
+p1{
+    position: absolute;
+    top: 1400px;
+    left:16%;
+    color: white;
 }
