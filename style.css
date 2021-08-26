@@ -19,3 +19,11 @@ body{
 h1 {
     color:red;
 }
+p{
+    position: absolute;
+    top: 1000px;
+}
+h2{
+    position: absolute;
+    bottom: 1000px;
+}
