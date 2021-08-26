@@ -12,14 +12,11 @@ body{
     left:0;
     top:0;
 }
-.on-top{
-    position: absolute;
-    bottom: -20px;
-}
 h1 {
     position:absolute;
-    left:50%;
-    color:red;
+    left:25%;
+    color:#c2a83e;
+    font-family: cursive;
 }
 p{
     position: absolute;
