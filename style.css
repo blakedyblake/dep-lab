@@ -14,7 +14,7 @@ body{
 }
 .on-top{
     position: absolute;
-    bottom: 20px;
+    bottom: -20px;
 }
 h1 {
     color:red;
