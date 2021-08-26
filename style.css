@@ -1,8 +1,9 @@
 body{
     background-color: black;
+    height:100000000000000000000px;
 }
 #TheQuacken{
-    width: 90%; 
+    width: 100%; 
     max-width: 100%;
     margin:0%;
     /* found on geek for geeks to proporitonally change photos */
