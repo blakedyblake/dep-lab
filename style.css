@@ -28,9 +28,12 @@ h1 {
 p{
     position: absolute;
     top: 1000px;
+    left:20%
 }
 h2{
+
     position: absolute;
-    top: 1500px;
+    left:10%;
+    top: 950px;
 
 }
