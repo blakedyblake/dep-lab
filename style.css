@@ -1,6 +1,7 @@
 
 #TheQuacken{
-    width: 50px; 
+    width: 100%; 
+    max-width: 100%;
     /* found on geek for geeks to proporitonally change photos */
     height:auto;
 }
