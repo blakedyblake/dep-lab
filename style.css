@@ -44,3 +44,8 @@ p1{
     left:16%;
     color: white;
 }
+#second{
+    position: absolute;
+    top: 850px;
+    left:50%;
+}
