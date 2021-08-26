@@ -1,3 +1,7 @@
+body{
+    height:1000%;
+    background-color: black;
+}
 #TheQuacken{
     width: 100%; 
     max-width: 100%;
