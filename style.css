@@ -2,6 +2,10 @@
 #TheQuacken{
     width: 100%; 
     max-width: 100%;
+    margin:0%;
     /* found on geek for geeks to proporitonally change photos */
     height:auto;
+    position:absolute;
+    left:0;
+    top:0;
 }
