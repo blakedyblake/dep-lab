@@ -17,6 +17,8 @@ body{
     bottom: -20px;
 }
 h1 {
+    position:absolute;
+    left:50%;
     color:red;
 }
 p{
