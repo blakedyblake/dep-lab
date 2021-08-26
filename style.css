@@ -1,3 +1,5 @@
+
+
 body{
     background-color: black;
     height:100000px;
@@ -16,7 +18,7 @@ h1 {
     position:absolute;
     left:25%;
     color:#c2a83e;
-    font-family: cursive;
+    font-family: 'WindSong', cursive;
 }
 p{
     position: absolute;
