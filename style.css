@@ -3,6 +3,10 @@
 body{
     background-color: black;
     height:100000px;
+    color:#c2a83e;
+    font-family: 'WindSong', cursive;
+
+
 }
 #TheQuacken{
     width: 100%; 
@@ -19,9 +23,7 @@ h1 {
     left:9%;
     top:13%;
     font-size: 5em;
-    color:#c2a83e;
     text-shadow: 2px 2px 4px white;
-    font-family: 'WindSong', cursive;
 }
 p{
     position: absolute;
