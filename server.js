@@ -18,7 +18,7 @@ app.get("/", (req,res)=>{
 
 
 
-const PORTNUMBER = 4000
+const PORTNUMBER = process.env.PORT || 4000
 app.listen(PORTNUMBER,()=>{
     console.log(`Running on port ${PORTNUMBER}`)
 }) 
