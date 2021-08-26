@@ -17,8 +17,8 @@ body{
 h1 {
     position:absolute;
     left:25%;
-    top:100%;
-    font-size: 500;
+    top:90%;
+    font-size: 3em;
     color:#c2a83e;
     font-family: 'WindSong', cursive;
 }
