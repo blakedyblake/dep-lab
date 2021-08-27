@@ -1,3 +1,5 @@
+const { default: axios } = require("axios");
+
 const baseURL = `http://localhost:4000/`
 
 // document.getElementById('second').addEventListener('click', ()=>{
@@ -53,3 +55,13 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
+
+document.getElementById("mydiv").addEventListener('click', ()=>{
+    axios.get('/DB2')
+    .then((res)=>{
+        document.getElementById('mydiv').innerHTML = `${res.data["2"]["name"]}`
+    })
+    .catch(()=>{
+        console.log("errrrr")
+    })
+})

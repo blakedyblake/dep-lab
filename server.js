@@ -1,12 +1,12 @@
 const express = require('express')
 const cors = require('cors')
 const path = require('path')
-const exp = require('constants')
 const app = express()
 
 app.use(express.json())
 app.use(cors())
 
+const DB = require('./sampleDB')
 app.get("/", (req,res)=>{
     res.sendFile(path.join(__dirname, "./index.html"))
 })
@@ -25,7 +25,9 @@ app.use('/js', express.static(path.join(__dirname, './client.js')))
 app.use('/css', express.static(path.join(__dirname, './stule.css')))
 app.use('/second',express.static(path.join(__dirname,'second-page.html')))
 
-
+axios.get('/DB2',(req,res)=>{
+    res.status(200).send(DB)
+})
 
 
 
