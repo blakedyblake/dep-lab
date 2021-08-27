@@ -57,7 +57,7 @@ function dragElement(elmnt) {
 document.getElementById("other-div").addEventListener('click', ()=>{
     axios.get(`${baseURL}/DB`)
     .then((res)=>{
-        document.getElementById('mydiv').innerHTML = `${res.data["2"]["name"]}`
+        document.getElementById('mydiv').innerHTML = `<p>${res.data["2"]["name"]}</p>`
     })
     .catch(()=>{
         console.log("errrrr")
