@@ -1,4 +1,4 @@
-const baseURL = `http://localhost:4000/`
+const baseURL = `https://dep-lab.herokuapp.com/`
 
 // document.getElementById('second').addEventListener('click', ()=>{
 //     axios.get("https://dep-lab.herokuapp.com/second-page")
@@ -55,7 +55,7 @@ function dragElement(elmnt) {
 }
 
 document.getElementById("other-div").addEventListener('click', ()=>{
-    axios.get('/DB2')
+    axios.get(`${baseURL}/DB`)
     .then((res)=>{
         document.getElementById('mydiv').innerHTML = `${res.data["2"]["name"]}`
     })
