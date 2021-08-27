@@ -56,7 +56,7 @@ function dragElement(elmnt) {
   }
 }
 
-document.getElementById("mydiv").addEventListener('click', ()=>{
+document.getElementById("other-div").addEventListener('click', ()=>{
     axios.get('/DB2')
     .then((res)=>{
         document.getElementById('mydiv').innerHTML = `${res.data["2"]["name"]}`
