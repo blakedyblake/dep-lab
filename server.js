@@ -15,14 +15,17 @@ app.get('/js', (req,res)=>{
 app.get('/css',(req,res)=>{
     res.sendFile(path.join(__dirname,'./style.css'))
 })
+app.get('/second',(req,res)=>{
+    res.sendFile(path.join(__dirname,'second-page.html'))
+})
 
 
 app.use('/js', express.static(path.join(__dirname, './client.js')))
 app.use('/css', express.static(path.join(__dirname, './stule.css')))
 
-axios.get('https://dep-lab.herokuapp.com/second-page', (res,req)=>{
-    res.sendFile(path.join(__dirname,'./second-page.html'))
-})
+// axios.get('https://dep-lab.herokuapp.com/second-page', (res,req)=>{
+//     res.sendFile(path.join(__dirname,'./second-page.html'))
+// })
 
 
 
