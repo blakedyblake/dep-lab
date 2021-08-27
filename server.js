@@ -8,7 +8,9 @@ app.use(cors())
 app.get("/DB",(req,res)=>{
     res.sendFile(path.join(__dirname, './sampleDB'))
 })
+
 const DB = require('./sampleDB')
+
 app.get("/", (req,res)=>{
     res.sendFile(path.join(__dirname, "./index.html"))
 })
@@ -30,6 +32,7 @@ app.use('/css', express.static(path.join(__dirname, './stule.css')))
 app.use('/second',express.static(path.join(__dirname,'second-page.html')))
 
 app.get(baseURL + '/DB',(req,res)=>{
+    console.log(DB)
     res.status(200).send(DB)
 })
 
