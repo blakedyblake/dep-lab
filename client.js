@@ -1,5 +1,3 @@
-const { default: axios } = require("axios");
-
 const baseURL = `http://localhost:4000/`
 
 // document.getElementById('second').addEventListener('click', ()=>{
