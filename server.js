@@ -1,6 +1,7 @@
 const express = require('express')
 const cors = require('cors')
 const path = require('path')
+const exp = require('constants')
 const app = express()
 
 app.use(express.json())
@@ -22,6 +23,7 @@ app.get('/second',(req,res)=>{
 
 app.use('/js', express.static(path.join(__dirname, './client.js')))
 app.use('/css', express.static(path.join(__dirname, './stule.css')))
+app.use('/second',express.static(path.join(__dirname,'second-page.html')))
 
 
 
