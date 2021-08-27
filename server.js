@@ -25,7 +25,7 @@ app.use('/js', express.static(path.join(__dirname, './client.js')))
 app.use('/css', express.static(path.join(__dirname, './stule.css')))
 app.use('/second',express.static(path.join(__dirname,'second-page.html')))
 
-axios.get('/DB2',(req,res)=>{
+app.get('/DB2',(req,res)=>{
     res.status(200).send(DB)
 })
 
