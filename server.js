@@ -8,7 +8,7 @@ app.use(cors())
 app.get("/DB",(req,res)=>{
     res.sendFile(path.join(__dirname, './sampleDB'))
 })
-const DB = require('./sampleDB')
+const DB = require('/DB')
 app.get("/", (req,res)=>{
     res.sendFile(path.join(__dirname, "./index.html"))
 })
