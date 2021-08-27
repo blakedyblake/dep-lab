@@ -50,5 +50,7 @@ p1{
     left:50%;
 }
 #mydiv{
+    position:absolute;
+    left:50%;
     background-color: blueviolet;
 }
