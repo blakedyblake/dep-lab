@@ -52,5 +52,7 @@ p1{
 #mydiv{
     position:absolute;
     left:50%;
+    width: 75px;
+    height: 20px;
     background-color: blueviolet;
 }
