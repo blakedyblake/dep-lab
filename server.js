@@ -5,7 +5,9 @@ const app = express()
 
 app.use(express.json())
 app.use(cors())
-
+app.get("/DB",(req,res)=>{
+    res.sendFile(path.join(__dirname, './sampleDB'))
+})
 const DB = require('./sampleDB')
 app.get("/", (req,res)=>{
     res.sendFile(path.join(__dirname, "./index.html"))
