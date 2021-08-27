@@ -22,14 +22,14 @@ app.get('/second',(req,res)=>{
     res.sendFile(path.join(__dirname,'second-page.html'))
 })
 
-const baseURL = `https://dep-lab.herokuapp.com/`
+const baseURL = `https://dep-lab.herokuapp.com`
 
 
 app.use('/js', express.static(path.join(__dirname, './client.js')))
 app.use('/css', express.static(path.join(__dirname, './stule.css')))
 app.use('/second',express.static(path.join(__dirname,'second-page.html')))
 
-app.get('/DB',(req,res)=>{
+app.get(baseURL + '/DB',(req,res)=>{
     res.status(200).send(DB)
 })
 

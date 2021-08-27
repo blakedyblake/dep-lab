@@ -1,4 +1,4 @@
-const baseURL = `https://dep-lab.herokuapp.com/`
+const baseURL = `https://dep-lab.herokuapp.com`
 
 // document.getElementById('second').addEventListener('click', ()=>{
 //     axios.get("https://dep-lab.herokuapp.com/second-page")
@@ -56,7 +56,7 @@ function dragElement(elmnt) {
 
 document.getElementById("other-div").addEventListener('click', ()=>{
     console.log("test1")
-    axios.get(`/DB`)
+    axios.get(baseURL + `/DB`)
     .then((res)=>{
         console.log(res.data)
 
